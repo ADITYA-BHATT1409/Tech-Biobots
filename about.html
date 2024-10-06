@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PACE Satellite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: rgb(8, 57, 63);
+            border: 5px solid black;
+        }
+
+        header {
+            height: 200px;
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            object-fit: fill;
+            padding: 20px;
+            text-align: center;
+            color: rgb(207, 95, 232);
+            padding-top: 100px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 75px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        nav {
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 5px 8px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2, h3 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h2:hover, h3:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        .mission-statement {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #018aac;
+            border-left: 5px solid #343fdb;
+            color: #222e35;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .mission-statement:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            flex-basis: 30%;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member h4 {
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #e31313;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            header {
+                height: 150px;
+                padding-top: 50px;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                margin: 5px;
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2,
+            h3 {
+                font-size: 24px;
+            }
+
+            .mission-statement {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+
+            .team-member img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 480px) {
+            header {
+                height: 120px;
+                padding-top: 30px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 3px;
+                padding: 6px 8px;
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            h2,
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .mission-statement {
+                font-size: 0.9rem;
+                padding: 6px;
+            }
+
+            .team-member img {
+                width: 60px;
+                height: 60px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><i>About Our Mission</i></h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactinfo.html">REGISTER</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <section>
+        <p>Our mission is to empower the next generation to take meaningful action toward achieving the Sustainable
+            Development Goals (SDGs) set forth by the United Nations. As we reach the halfway point of the 2030 Agenda, we
+            recognize the importance of fostering awareness and understanding among high school students about global
+            challenges such as climate change, poverty, pollution, and inequality.</p>
+
+        <p>We are dedicated to integrating education about the SDGs into existing science units, such as weather, geology,
+            and soil health. By doing so, we aim to create a holistic learning environment where students can connect
+            scientific concepts to real-world issues. Our goal is to inspire critical thinking, encourage collaborative
+            problem-solving, and foster a sense of responsibility for our planet and society.</p>
+
+        <p>Through engaging lesson plans, hands-on activities, and community involvement, we strive to:</p>
+
+        <p><b><u><i>Educate:</i></u></b> Provide students with a comprehensive understanding of the SDGs and their relevance to their lives and
+            future.</p>
+        <p><b><u><i>Engage:</i></u></b> Create opportunities for students to actively participate in discussions, research, and projects related
+            to climate action and sustainable practices.</p>
+        <p><b><u><i>Empower:</i></u></b> Equip students with the tools and knowledge to develop actionable plans that contribute to their
+            communities' resilience and sustainability.</p>
+        <p><b><u><i>Measure Progress:</i></u></b> Foster a culture of accountability by encouraging students to track their initiatives' impacts
+            on achieving the SDGs.</p>
+        <p>Together, we can cultivate a generation of informed, motivated, and engaged youth ready to tackle the challenges
+            of today and shape a sustainable future for all.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NASA Sustainable Development Mission</p>
+    </footer>
+
+</body>
+
+</html>

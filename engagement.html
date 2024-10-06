@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PACE Satellite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: rgb(27, 84, 52);
+            border: 5px solid black;
+        }
+
+        header {
+            /* background-color: #3498db; */
+            height: 200px;
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: max(1200px, 100vw);
+            background-position: center center;
+            object-fit: fill;
+            padding: 20px;
+            text-align: center;
+            color: rgb(220, 244, 127);
+            padding-top: 100px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 75px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        nav {
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            width: fit-content;
+            padding: 5px 8px;
+            border-radius: 5px;
+            color: white;
+            /* font-size: 20px; */
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+            align-items: center;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            opacity: 1.1;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            /* background: #fff; */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h2:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        h3 {
+            color: #a8d0eb;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        h3:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        .mission-statement {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #018aac;
+            border-left: 5px solid #343fdb;
+            color: #222e35;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .mission-statement:hover {
+            transform: scale(1.1);
+            /* Pop-up effect */
+            opacity: 1.1;
+            /* Change opacity */
+        }
+
+        ul {
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            flex-basis: 30%;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member h4 {
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 150px;
+                padding-top: 50px;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                margin: 5px;
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2,
+            h3 {
+                font-size: 24px;
+            }
+
+            .mission-statement {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member {
+                flex-basis: 100%;
+            }
+
+            .team-member img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 120px;
+                padding-top: 30px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 3px;
+                padding: 6px 8px;
+                font-size: 12px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            h2,
+            h3 {
+                font-size: 20px;
+            }
+
+            .mission-statement {
+                font-size: 0.9rem;
+                padding: 6px;
+            }
+
+            .team-member img {
+                width: 60px;
+                height: 60px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            /* background-color: #2c3e50; */
+            color: #e31313;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><i>Student Engagement</i></h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactinfo.html">REGISTER</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <section>
+        <h2>Tools and Strategies for Youth Engagement:</h2>
+        <h3>Education and Awareness:</h3>
+        <p>Educating young people about the SDGs and their importance fosters a sense of responsibility and empowers them to take action.</p>
+
+        <h3>Skill Development:</h3>
+        <p>Providing training and resources helps youth acquire skills necessary for advocacy, entrepreneurship, and leadership in sustainable initiatives.</p>
+
+        <h3>Participation in Decision-Making:</h3>
+        <p>Involving youth in policy-making processes and local governance ensures their voices are heard and valued.</p>
+
+        <h3>Collaboration and Partnerships:</h3>
+        <p>Encouraging collaboration among youth organizations, NGOs, and governments can amplify efforts and maximize impact.</p>
+
+        <h3>Digital Tools and Technology:</h3>
+        <p>Utilizing social media and digital platforms enables young people to connect, share ideas, and mobilize for action on a global scale.</p>
+
+        <h3>Volunteerism and Community Service:</h3>
+        <p>Engaging in volunteer projects fosters community involvement and helps young people contribute directly to achieving the SDGs.</p>
+
+    <footer>
+        <p>&copy; 2024 NASA Sustainable Development Mission </p>
+    </footer>
+
+</body>
+
+</html>
